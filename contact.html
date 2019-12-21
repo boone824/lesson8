@@ -22,10 +22,53 @@
       <main>
         <div class="aboutarch">
           <h2>Straight to the Point Archery</h2>
-          <p>528 Nock Point Ln</p>
-          <p>Tacoma, WA 98412</p>
-          <p>archery-education@example.com</p>
-          <p>(253)555-1010</p>
+
+          <form class="" action="contact.html" method="post">
+            <fieldset>
+              <legend>Personal Info</legend>
+            <label>
+              First Name
+            <input type="text" name="name" id="fname">
+            </label>
+            <label>
+              Last Name
+            <input type="text" name="name" id="lname">
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="number" id="phnum">
+            </label>
+            <label>
+              Email:
+              <input type="email" name="email" id="email">
+            </label>
+            <label>
+              Select Your Subject
+              <select name="Subject">
+                <option value="Appointments">Appointments</option>
+                <option value="Classes">Classes</option>
+                <option value="Other" selected>Other</option>
+              </select>
+            </label>
+            <label>
+              More Comments:
+              <textarea name="more-cmments" rows="10" ></textarea>
+            </label>
+            </fieldset>
+            <fieldset>
+              <legend>What your problem?</legend>
+            <label>
+              Printing
+              <input type="radio" name="service" value="print">
+              </label>
+              <label>
+              Design
+              <input type="radio" name="service" value="design">
+            </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+
         </div>
 
       </main>

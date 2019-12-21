@@ -6,7 +6,8 @@ header > nav ul,
 .aboutarch,
 .arch-container,
 .instructors-container,
-.class-container{
+.class-container,
+.grid{
   margin: 0 auto;
   max-width: 70rem;
 }
@@ -19,6 +20,11 @@ header nav {
     text-transform: uppercase;
     height: 50px;
     line-height: 24px;
+    flex: auto;
+
+  }
+.brandlogo{
+    width: 375px;
   }
 nav ul li {
     float: left;
@@ -69,6 +75,7 @@ h2 {
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   text-align: center;
+  vertical-align: top;
 }
 main {
   margin-top: 3%;
@@ -80,6 +87,7 @@ footer ftnav {
 }
 p {
   font-weight: normal;
+  vertical-align: top;
 }
 .ftnav a {
   color: white;
@@ -99,49 +107,50 @@ p {
   margin-right: 2%;
 }
 .flex-item-1 {
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .flex-item-2 {
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .flex-item-3 {
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .flex-item-4{
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .flex-item-5 {
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .flex-item-6 {
-  background-color: grey;
+  background-color: #E6E6E6;
 }
 .arch-flex{
   height: auto;
-  width: 550px;
+  width: 555px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 0;
   border-bottom: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #004BFF;
+  border-bottom-color: #1b447f;
   border-top: 5px;
   border-top-style: solid;
-  border-top-color: #004BFF;
+  border-top-color: #1b447f;
 
 }
 .arch-container h2{
-  font-size: 24px;
+  font-size: 32px;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
   text-align: center;
-  color: white;
+  color: black;
+  text-transform: uppercase;
 }
-.arch-flex p {
+.arch-flex p,
+.class-flex p {
   padding-left: 4%;
   padding-right: 4%;
-  text-transform: capitalize;
-  color: white;
-  text-align: center;
+  color: black;
+  text-align: left;
 }
 .arch-container {
   display: flex;
@@ -158,14 +167,13 @@ p {
   height: auto;
   width: 350px;
   margin-top: 10px;
-  margin-left: 10px;
   border-bottom: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #004BFF;
+  border-bottom-color: #1b447f;
   border-top: 5px;
   border-top-style: solid;
-  border-top-color: #004BFF;
-  color: white;
+  border-top-color: #1b447f;
+  color: black;
 }
 .class-flex p {
   padding-left: 4%;
@@ -197,18 +205,18 @@ p {
   height: auto;
   width: 350px;
   margin-top: 10px;
-  margin-left: 10px;
   border-bottom: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #004BFF;
+  border-bottom-color: #1b447f;
   border-top: 5px;
   border-top-style: solid;
-  border-top-color: #004BFF;
-  color: white;
+  border-top-color: #1b447f;
+  color: black;
 }
 .col {
   float: left;
-  padding: 5px;
+  padding: 15px;
+
 }
 .row::after {
     content: "";
@@ -265,4 +273,47 @@ p {
 video {
   width: 100%;
   height: auto;
+}
+form {
+  width: 60%;
+
+}
+label {
+  display: block;
+}
+button, input, select, textarea
+{font-family: inherit;
+font-size: 100%;
+width: 150px;
+margin: 0;
+}
+input[type="text"], [type="tel"], [type="email"]{
+  background-color: grey;
+  border-radius: 10px;
+  width:100%;
+  color: white;
+}
+input:invalid {
+  border-color: red;
+}
+input[type="submit"] {
+  color: white;
+  background-color: #1b447f;
+  border: 4px solid #1b447f;
+}
+input[type="submit"]:active {
+  border-color: white;
+}
+textarea {
+  vertical-align: top;
+}
+legend {
+  position: relative;
+}
+fieldset {
+  margin-top: 25px;
+  background-color: #f4f4f4;
+}
+.servicebanner {
+  margin-top: 0;
 }
